@@ -1,0 +1,9 @@
+font-family: 'Flow Circular', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Noto Color Emoji', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Nabla', cursive;
