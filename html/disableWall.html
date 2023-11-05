@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disable Wallper changing</title>
     <link rel="stylesheet" href="resource://content-accessible/plaintext.css">
+    <style>
+        code {
+            color: green;
+            font-style: italic;
+            padding: 4px 8px;
+            background-color: rgba(38, 38, 38,.5);
+            border-radius: 18px;
+        }
+    </style>
 </head>
 <body>
    <ol style="font-size: 1.5rem;">
         <li><code>Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies</code></li>
-        <li>create new key named <code>ActiveDesktop</code></li>
-        <li>create new <code>DWORD (32-bit) vaule</code> and name it <code>NoChangingWallPaper</code></li>
-        <li>set that vaule to 1</li>
+        <li>key named <code>ActiveDesktop</code></li>
+        <li><i>DWORD (32-bit) vaule</i> and name it <code>NoChangingWallPaper</code></li>
+        <li>set that vaule to <i>1</i></li>
    </ol>
 </body>
 </html>
