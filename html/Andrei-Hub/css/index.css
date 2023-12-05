@@ -1,0 +1,45 @@
+:root {
+    --content: #252525;
+    --main: #FFAFCC;
+    --mainLite: #FFC8DD;
+    --second: #A2D2FF;
+    --secondLite: #BDE0FE;
+    --accent: #fb8500;
+}
+
+.main {
+    width: 90vw;
+    margin: 2rem auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(390px,1fr));
+    place-items: center;
+}
+
+.main-article {
+    
+}
+
+.main-article-thumbnail img {
+    width: 390px;
+    aspect-ratio: 16/9;
+    border-radius: 18px;
+}
+
+.main-article-text h3{
+    margin: 5px 0;
+    font-size: 1.3rem;
+    color: var(--main);
+}
+
+.main-article-text p{
+    user-select: none;
+    margin: 5px 0;
+    color: var(--main);
+}
+
+.main-article-text h3:hover {
+    color: var(--mainLite);
+    text-decoration: underline;
+}
+
