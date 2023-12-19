@@ -13,7 +13,7 @@
 }
 
 .header-menu {
-    min-height: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -21,12 +21,11 @@
 }
 
 .--menu-logo {
+    /* width: 15vw; */
     align-self: center;
     margin-right: auto;
     font-size: 1.5rem;
 }
-
-
 
 .--menu-search input{
     /* width: 550px; */
@@ -54,12 +53,12 @@
     vertical-align: middle;
 }
 
-
 .header-nav ul{
     min-height: 30px;
     display: flex;
     gap: 3rem;
     justify-content: center;
+    overflow: hidden;
 }
 
 .header-nav ul li {
@@ -69,4 +68,30 @@
 .header-nav ul li a:hover {
     color: var(--mainLite);
     text-decoration: underline;
+}
+
+
+/* @media only screen and (max-width: 600px) { */
+@media only screen and (max-width: 880px) {
+    
+    .header-menu {
+        gap: .5rem;
+    }
+
+    .header-menu div {
+        margin-right: 0;
+    }
+
+    ._desktopOnly {
+        display: none;
+    }
+    
+
+
+
+
+  
+    body {
+        /* background-color: #A2D2FF; */
+    }
 }

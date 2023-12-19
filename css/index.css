@@ -43,3 +43,23 @@
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 400px) {
+
+    ._hellaSmall {
+        display: none;
+    }
+
+    .main {
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+
+    .main-article-thumbnail img, .main-article {
+        width: 90vw;
+    }
+
+    .main-article-title {
+        font-size: 1vw;
+    }
+
+}
+
