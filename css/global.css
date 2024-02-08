@@ -1,37 +1,37 @@
 :root {
     --content: #252525;
-    --main: #FFAFCC;
-    --mainLite: #FFC8DD;
-    --second: #A2D2FF;
-    --secondLite: #BDE0FE;
+    --main: #ffafcc;
+    --mainLite: #ffc8dd;
+    --second: #a2d2ff;
+    --secondLite: #bde0fe;
     --accent: #fb8500;
 }
 
-
 .header {
-    background-color: var(--content);   
+    background-color: var(--content);
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
 }
 
 .header-menu {
     height: 70px;
     display: flex;
-    justify-content: center;
     align-content: center;
     gap: 3rem;
 }
 
 .--menu-logo {
-    /* width: 15vw; */
     align-self: center;
     margin-right: auto;
     font-size: 1.5rem;
 }
 
-.--menu-search input{
+.--menu-search input {
     /* width: 550px; */
     width: 30vw;
     height: 38px;
-    margin: .3rem 0;
+    margin: 0.3rem 0;
     padding: 5px;
     padding-left: 40px;
     color: #000;
@@ -45,7 +45,7 @@
 
 .--menu-account {
     margin-left: auto;
-    padding: .5rem 0;
+    padding: 0.8rem 0;
 }
 
 ._msoHeader {
@@ -53,7 +53,7 @@
     vertical-align: middle;
 }
 
-.header-nav ul{
+.header-nav ul {
     min-height: 30px;
     display: flex;
     gap: 3rem;
@@ -70,12 +70,10 @@
     text-decoration: underline;
 }
 
-
 /* @media only screen and (max-width: 600px) { */
 @media only screen and (max-width: 880px) {
-    
     .header-menu {
-        gap: .5rem;
+        gap: 0.5rem;
     }
 
     .header-menu div {
@@ -84,14 +82,5 @@
 
     ._desktopOnly {
         display: none;
-    }
-    
-
-
-
-
-  
-    body {
-        /* background-color: #A2D2FF; */
     }
 }
