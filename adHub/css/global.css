@@ -1,0 +1,86 @@
+:root {
+    --content: #252525;
+    --main: #ffafcc;
+    --mainLite: #ffc8dd;
+    --second: #a2d2ff;
+    --secondLite: #bde0fe;
+    --accent: #fb8500;
+}
+
+.header {
+    background-color: var(--content);
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+}
+
+.header-menu {
+    height: 70px;
+    display: flex;
+    align-content: center;
+    gap: 3rem;
+}
+
+.--menu-logo {
+    align-self: center;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+.--menu-search input {
+    /* width: 550px; */
+    width: 30vw;
+    height: 38px;
+    margin: 0.3rem 0;
+    padding: 5px;
+    padding-left: 40px;
+    color: #000;
+    background-color: #cecece;
+    border: none;
+    border-radius: 12px;
+    background-image: url(../images/SearchIcon.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+.--menu-account {
+    margin-left: auto;
+    padding: 0.8rem 0;
+}
+
+._msoHeader {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.header-nav ul {
+    min-height: 30px;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header-nav ul li {
+    min-height: 0;
+}
+
+.header-nav ul li a:hover {
+    color: var(--mainLite);
+    text-decoration: underline;
+}
+
+/* @media only screen and (max-width: 600px) { */
+@media only screen and (max-width: 880px) {
+    .header-menu {
+        gap: 0.5rem;
+    }
+
+    .header-menu div {
+        margin-right: 0;
+    }
+
+    ._desktopOnly {
+        display: none;
+    }
+}
